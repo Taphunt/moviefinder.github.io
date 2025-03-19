@@ -1,0 +1,125 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 450px;
+    margin: auto;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.3);
+}
+
+h1 {
+    font-size: 24px;
+    color: #ff9800;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #bbb;
+}
+
+/* Search Box */
+.search-box {
+    position: relative;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    background: #2c2c2c;
+    color: white;
+}
+
+#suggestions {
+    position: absolute;
+    width: 80%;
+    background: #2c2c2c;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    color: #fff;
+}
+
+.suggestion-item:hover {
+    background-color: #ff9800;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.2);
+}
+
+.movie-info img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.movie-details {
+    flex: 1;
+}
+
+.imdb-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #ff9800;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.imdb-btn:hover {
+    background-color: #e68900;
+}
